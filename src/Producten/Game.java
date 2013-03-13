@@ -1,32 +1,37 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package Producten;
-
-/**
+ * Class Game bevat de extra eigenschappen voor een Game object. De standaard
+ * eigenschappen worden uit Class Item gehaald
  *
  * @author dennis
  */
-public class Game {
- private String titel;
- private String omschrijving;
- private int spelers;
- private double prijs;    
+package Producten;
 
-public Game(){
-titel= "";
-omschrijving= "";
-spelers =0;
-prijs = 0.0;
+public class Game extends Item {
+
+    private int spelers;
+
+    public Game(double prijs, String titel, String omschrijving, int spelers) {
+        this.setPrijs(prijs);
+        this.setOmschrijving(omschrijving);
+        this.setTitel(titel);
+        this.setSpelers(spelers);
+    }
+
+    public int getSpelers() {
+        return spelers;
+    }
+
+    private void setSpelers(int spelers) {
+        this.spelers = spelers;
+    }
+
+    /**
+     * toString vult aan op de toString van de bovenliggende class Item
+     *
+     * @return de waarde spelers
+     */
+    @Override
+    public String toString() {
+        return super.toString() + "\n" + "Aantal spelers: " + spelers;
+    }
 }
-
-public Game(String titel, String omschrijving, int spelers, double prijs){
-this.titel=titel;
-this.omschrijving=omschrijving;
-this.spelers=spelers;
-this.prijs=prijs;
-}
-
-}
-
