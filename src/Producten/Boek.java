@@ -6,11 +6,23 @@
  */
 package Producten;
 
+/**
+ *
+ * @author dennis
+ */
 public class Boek extends Item {
 
     private String auteur;
     private String isbn;
 
+    /**
+     *
+     * @param prijs
+     * @param titel
+     * @param auteur
+     * @param omschrijving
+     * @param isbn
+     */
     public Boek(double prijs, String titel, String auteur, String omschrijving, String isbn) {
         this.setPrijs(prijs);
         this.setOmschrijving(omschrijving);
@@ -19,7 +31,11 @@ public class Boek extends Item {
         this.setIsbn(isbn);
     }
 
-     public String getAuteur() {
+     /**
+     *
+     * @return
+     */
+    public String getAuteur() {
         return auteur;
     }
 
@@ -27,6 +43,10 @@ public class Boek extends Item {
         this.auteur = auteur;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getIsbn() {
         return isbn;
     }

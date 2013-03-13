@@ -6,11 +6,23 @@
  */
 package Producten;
 
+/**
+ *
+ * @author dennis
+ */
 public class CD extends Item {
 
     private String artiest;
     private int tracks;
 
+    /**
+     *
+     * @param prijs
+     * @param titel
+     * @param artiest
+     * @param omschrijving
+     * @param tracks
+     */
     public CD(double prijs, String titel, String artiest, String omschrijving, int tracks) {
         this.setPrijs(prijs);
         this.setOmschrijving(omschrijving);
@@ -19,6 +31,10 @@ public class CD extends Item {
         this.setTracks(tracks);
     }
 
+    /**
+     *
+     * @return
+     */
     public String getArtiest() {
         return artiest;
     }
@@ -27,6 +43,10 @@ public class CD extends Item {
         this.artiest = artiest;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getTracks() {
         return tracks;
     }

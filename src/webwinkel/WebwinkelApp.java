@@ -14,8 +14,16 @@ import Producten.Boek;
 import Producten.CD;
 import Producten.Game;
 
+/**
+ *
+ * @author dennis
+ */
 public class WebwinkelApp {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         /*Boek boek1 = new Boek("Java: A beginners guide", "Java programming", "Schildt, Herbert", "978-0-07-160632-5", 59.95);

@@ -10,22 +10,41 @@ package webwinkel;
 import Producten.Item;
 import java.util.ArrayList;
 
+/**
+ *
+ * @author dennis
+ */
 public class Winkelmand {
 
     private ArrayList<Item> producten;
 
+    /**
+     *
+     */
     public Winkelmand() {
         this.producten = new ArrayList();
     }
 
+    /**
+     *
+     * @param product
+     */
     public void voegToe(Item product) {
         this.producten.add(product);
     }
 
+    /**
+     *
+     * @param product
+     */
     public void verWijder(Item product) {
         this.producten.remove(product);
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<Item> getProducten() {
         return producten;
     }

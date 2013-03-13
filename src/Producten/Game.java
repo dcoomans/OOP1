@@ -6,10 +6,21 @@
  */
 package Producten;
 
+/**
+ *
+ * @author dennis
+ */
 public class Game extends Item {
 
     private int spelers;
 
+    /**
+     *
+     * @param prijs
+     * @param titel
+     * @param omschrijving
+     * @param spelers
+     */
     public Game(double prijs, String titel, String omschrijving, int spelers) {
         this.setPrijs(prijs);
         this.setOmschrijving(omschrijving);
@@ -17,6 +28,10 @@ public class Game extends Item {
         this.setSpelers(spelers);
     }
 
+    /**
+     *
+     * @return
+     */
     public int getSpelers() {
         return spelers;
     }
